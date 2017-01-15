@@ -21,7 +21,7 @@ Runner.prototype.update = function(){
     if (! this.failed){
         this.x += this.speed;
     }
-    if (Math.random() < fail){
+    if (Math.random() < this.fail){
         this.failed = true;
     }
 }
