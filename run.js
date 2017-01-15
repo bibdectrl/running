@@ -21,7 +21,7 @@ Runner.prototype.update = function(){
     if (! this.failed){
         this.x += this.speed;
     }
-    if (Math.random() < this.fail){
+    if (Math.random() < fail){
         this.failed = true;
     }
 }
@@ -40,8 +40,15 @@ function setup(){
 
 function draw(){
     clear();
+    allFailed = true;
     Array.forEach(runners, function(runner){
         runner.draw();
         runner.update();
+        if (! runner.failed) {
+            allFailed = false;
+        }
     });
+    if (allFailed) {
+        // select winner based on who got the furthest
+    }
 }
