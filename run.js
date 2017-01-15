@@ -1,3 +1,15 @@
+/* things to add:
+ * - betting mechanism
+ * - statistics for oddsmaking
+ * - simulate initial number of races so that statistical data exists
+ * - switching between betting and racing modes
+ * - 
+ *
+ */
+
+
+
+
 var canvas;
 var runners;
 
