@@ -53,7 +53,7 @@ function setup(){
 function draw(){
     clear();
     allFailed = true;
-    Array.forEach(runners, function(runner){
+    runners.forEach(function(runner){
         runner.draw();
         runner.update();
         if (! runner.failed) {
